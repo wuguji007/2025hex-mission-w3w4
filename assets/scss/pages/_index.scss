@@ -1,0 +1,189 @@
+.nav-index {
+    li {
+        font-size: 16px;
+        font-weight: 500px;
+        line-height: 1.5;
+        width: 50%;
+        padding: 12px 24px;
+        transition: .2s; 
+        &:hover {
+            color: $primary-500;
+        } 
+    }    
+    .right {
+        background-color: $primary-200;
+    }
+    .left {
+        background-color: $primary-100;
+    }
+} 
+
+
+.hero-section-banner {
+    height: 800px;
+    background-image: url('/assets/images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $neutral-0;
+}
+
+@media (max-width: 767px) {
+    .hero-section-banner {
+        height: 480px;
+        background-image: url('/assets/images/banner-sm.png');
+    }
+}
+
+.hero-section-text {
+    padding-top: 289px;
+    padding-left: 200px;
+}
+
+@media (max-width: 767px) {
+    .hero-section-text {
+        padding-top: 155px;
+        padding-left: 24px;
+    }
+}
+
+.new-arrival {
+    color: $neutral-900;
+}
+
+
+.popular-product {
+    position: relative;
+
+    .popular-product-text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 8px 12px;
+        font-size: 14px;
+        font-weight: 500;
+        color: $primary-400;
+        background-color: $primary-100;
+    }
+}
+
+.banner {
+    background-image: url('/assets/images/banner-co-branded.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0; 
+    color: $neutral-0;
+    position: relative;
+
+    .text-x {
+        color: $primary-300;
+    }
+
+    .h5 {
+        font-size: 20px;
+        color: $neutral-500;
+        font-weight: 400;
+    }
+
+    .star-img {
+        position: absolute;
+        width: 48px;
+        top: 68px;
+        left: calc(50% - 397px);
+    }
+
+    .sparkle-img {
+        position: absolute;
+        width: 76px;
+        bottom: 132px;
+        right: calc(50% - 357px);
+    }
+}
+
+@media (max-width: 767px) {
+    .banner {
+        padding: 64px 0;
+        background-image: url('/assets/images/banner-co-branded-sm.png');
+        overflow: hidden;
+
+        .h5 {
+            font-size: 16px;
+            gap: 4px;
+        }
+
+        .btn-green {
+            padding: 12px 24px;
+        }
+
+        .star-img {
+            top: 32px;
+            left: -20px;
+        }
+
+        .sparkle-img {
+            bottom: 104px;
+            right: -28px;
+        }
+    }
+}
+
+.select-series {
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        .h3 {
+            transition: .5s; 
+            color: $primary-300;
+        }
+    }
+
+    .series {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(black, 0.4);
+        color: $neutral-0; 
+        gap: 8px;
+    }
+}
+
+.inspiration-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;    
+}
+
+.inspiration-col-4 {
+    width: calc(100%/12 * 4);
+    padding: 4px;
+}
+
+.inspiration-col-6 {
+    width: calc(100%/12 * 6);
+    padding: 4px;
+}
+
+.inspiration-col-12 {
+    width: 100%;
+    padding: 4px;
+}
+
+@media (max-width: 767px) {
+    .inspiration-row {
+        flex-wrap: nowrap;
+        margin: 0 -8px;
+        img {
+            min-width: 300px;
+        }
+    }
+
+    .inspiration-col-4,
+    .inspiration-col-6,
+    .inspiration-col-12 {
+        width: unset;
+        padding: 0 8px;
+    }   
+}

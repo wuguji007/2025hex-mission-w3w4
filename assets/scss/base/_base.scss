@@ -1,0 +1,134 @@
+// 基本樣式
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Noto Sans TC", serif;
+	color: $neutral-900;
+	letter-spacing: 0.05em;
+	line-height: 1.5;
+}
+
+img {
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+	color: $neutral-900;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 32px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 28px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 700;	
+}
+
+h5 {
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 700;	
+}
+
+h6 {
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.display-1 {
+	font-size: 64px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.display-2 {
+	font-size: 48px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+@media (max-width: 767px) {
+	.display-2-md {
+		font-size: 48px;
+		line-height: 1.2;
+		font-weight: 700;
+	}
+}
+
+@media (max-width: 767px) {
+	.h2-md {
+		font-size: 32px;
+	}
+
+	.h3-md {
+		font-size: 28px;
+	}
+
+	.h4-md {
+		font-size: 24px;
+	}
+
+	.h5-md {
+		font-size: 20px;
+	}
+
+	.h6-md {
+		font-size: 16px;
+	}
+
+}
+
+@media (max-width: 576px) {
+	.h3-sm {
+		font-size: 28px;
+	}
+
+	.h4-sm {
+		font-size: 24px;
+	}
+	
+	.h5-sm {
+		font-size: 20px;
+	}	
+
+	.h6-sm {
+		font-size: 16px;
+	}
+
+}
+
+ul li a {
+    font-weight: 500;
+}
+
+
+@media (max-width:1096px) {
+	.h5-lg {
+		font-size: 20px;
+	}
+}

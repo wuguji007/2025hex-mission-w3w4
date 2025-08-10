@@ -1,0 +1,65 @@
+.btn {
+    display: block;
+	border: none;
+	border-radius: 4px;
+	padding: 12px 24px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+    letter-spacing: 0.05em;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+
+@media (max-width: 576px) {
+    .btn {
+        padding: 8px 16px;
+    }
+}
+
+.btn .btn-dark {
+    color: $neutral-0;
+    background-color: $neutral-900;
+    transition: .2s;
+    &:hover {
+        background-color: $neutral-700;
+    }
+}
+
+.btn-light {
+    border: 1px solid $neutral-900;
+    
+}
+
+.btn-green {
+    background-color: $primary-300;
+    transition: .2s; 
+    &:hover {
+        color: $primary-500;
+    } 
+}
+
+.product-save .btn-add::before {
+    display: block;
+	border: none;
+	border-radius: 4px;
+	padding: 12px 24px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+    letter-spacing: 0.05em;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+
+.product-save .btn-add:hover::after {
+    color: $neutral-0;
+    background-color: $neutral-900;
+}
+
+.product-save .bi {
+    padding-right: 8px;
+}
+

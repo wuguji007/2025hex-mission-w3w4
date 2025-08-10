@@ -1,0 +1,26 @@
+.breadcrumb + .breadcrumb::before {
+	content: "/";
+	padding: 0 12px;
+	color: $neutral-300;
+	font-weight: 700;
+}
+
+@media (max-width:767px) {
+	.breadcrumb + .breadcrumb::before {
+		padding: 0 8px;
+	}	
+
+	.breadcrumb {
+		font-size: 14px;
+	}
+}
+
+
+.breadcrumb {
+	font-weight: 500;
+}
+
+.breadcrumb-link {
+	color: $neutral-600;
+	font-weight: 500;
+}

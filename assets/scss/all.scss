@@ -1,0 +1,27 @@
+// 引入字體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap');
+
+
+@import './helper/variables';
+@import './helper/utils';
+
+
+@import './base/reset';
+@import './base/base';
+
+
+@import './components/breadcrumb';
+@import './components/button';
+
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+@import './layout/footer-no-register.scss';
+
+
+@import './pages/index';
+@import './pages/products';
+@import './pages/product';
+@import './pages/story';
+@import './pages/collection';
+@import './pages/registration';

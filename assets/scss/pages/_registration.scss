@@ -1,0 +1,124 @@
+.left-box {
+    background-image: url('/assets/images/banner-sm.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+    height: 100%;
+    color: $neutral-0;
+    h1 {
+        padding-top: 71px;
+        padding-left: 40px;
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        color: $neutral-500;
+        padding-left: 125px;
+    }
+}
+
+@media (max-width:1200px) {
+    .left-box h4 {
+        padding-left: 40px;        
+    }     
+}
+
+
+@media (max-width:960px) {
+    .left-box {
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+        }
+        h4 {
+            font-size: 16px;
+        }
+    }     
+}
+
+@media (max-width:767px) {
+    .left-row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+
+
+    .left-box {
+        border-radius: 0px;
+
+        h1 {
+            padding-top: 24px;
+            padding-left: 24px;
+            margin-bottom: 9px;
+        }
+        h4 {
+            padding-left: 24px;
+            padding-bottom: 150px;
+        }
+    }   
+}
+
+.right-box {
+    background-image: url('/assets/images/login-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $neutral-600;
+    border-radius: 12px;
+    .content {
+        width: 100%;
+    }
+}
+
+.btn-tab {
+	border: none;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+    letter-spacing: 0.05em;
+    margin: 0 auto;
+	cursor: pointer;
+	background-color: transparent;
+    border-bottom: 2px solid $neutral-300; 
+    transition: .3s;
+}
+
+.btn-tab:hover {
+    cursor: pointer;
+    border-bottom: 2px solid $neutral-900;
+}
+
+.btn-tab:focus {
+    font-weight: 500;
+    border-bottom: 2px solid $neutral-900; 
+}
+
+.tab {
+    text-align: left;
+    transition: .3s;
+
+    p {
+        border: 1px solid $neutral-300;
+        background-color: $neutral-0;
+        border-radius: 4px;
+    }
+
+    p:hover {
+        cursor: pointer;
+        background: $neutral-100;
+    }
+}
+
+@media (max-width:767px) {
+    .right-box {        
+        border-radius: 0px;
+        background-image: none;
+        background-color: $neutral-0;
+        margin-bottom: 32px;
+
+        .content {
+            padding: 0;
+        }
+    }    
+}

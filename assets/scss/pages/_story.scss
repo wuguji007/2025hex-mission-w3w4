@@ -1,0 +1,60 @@
+.hero-section {
+    padding-top: 151px;
+    padding-bottom: 151px;
+    background-image: url('/assets/images/hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $neutral-0;
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 87px 0;
+        background-image: url('/assets/images/hero-sm.png');
+    }
+
+    .text-md-tal {
+        text-align: left;
+    }
+}
+
+.brand-tagline {
+    // max-width: 856px;
+    background: $primary-100;
+    margin: 0 auto 48px;
+
+    h5 {
+        color: $primary-400;
+    }
+}
+
+@media (max-width: 767px) {
+    .brand-tagline {
+    margin: 0 auto 32px;        
+    }   
+}
+
+
+.brand-intro h5{
+    color: $primary-400;
+}
+
+
+.brand-history span {
+	font-size: 1.25em;
+}
+
+
+.brand-stories .link {
+    color: $primary-400;
+    text-decoration: underline;text-underline-offset: 8px; 
+    transition: .3s;
+    &:hover {
+    color: $primary-500;
+    }   
+}
+
+.brand-stories .bi {
+    margin-right: 8px;
+}

@@ -1,0 +1,34 @@
+.register {
+    background: $primary-200;
+    margin-top: 48px;
+}
+
+@media (max-width: 767px) {
+    .register {
+        margin-top: 24px;
+    }
+}
+
+footer {
+    background-color: $neutral-100;
+}
+
+.footer-nav .logo {
+    padding: 8px 12px;
+}
+
+@media (max-width: 576px) {
+    .footer-nav .logo {
+        padding: 0 0;
+        margin-bottom: 8px;
+    }    
+}
+
+.copyright {
+    border-top: 1px solid $neutral-300;
+    font-size: 14px;
+    font-weight: 400;
+    color: $neutral-600;
+    text-align: center;
+    line-height: 1.5;
+}

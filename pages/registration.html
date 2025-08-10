@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>index</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main class="container">
+        <div class="row left-row py-64 py-md-0">
+            <!-- 左側區塊 -->
+            <div class="col-5 col-md-4-0padding mb-md-32">
+                <div class="left-box">
+                  <h1 class="display-2 h4-md">URBNSTEP</h1>
+                  <h4 class="h4 h6-md">Your Step, Your Statement</h4>
+                </div>                  
+            </div>
+
+            <!-- 右側區塊 -->
+            <div class="col-7 col-md-4 tac">
+
+              <div class="right-box col-12 col-md-4">
+                <div class="content py-120 px-80">
+                  <h3 class="h3 mb-32 mb-md-24">歡迎！</h3>
+
+              <div class="btn-switch d-f mb-32">
+
+                <button class="btn-tab w-50">
+                  <ul class="tab-switch">
+                    <li class="tab-signin h6 py-12"><a href="#tab-signin">登入</a></li>
+                  </ul>
+                </button>
+
+                <button class="btn-tab w-50">
+                  <ul class="tab-switch">
+                    <li class="tab-signup h6 py-12"><a href="#tab-signup">註冊</a></li>
+                  </ul> 
+                </button>                
+
+              </div>              
+
+
+              <div id="tab-signin" class="tab">
+                <p class="facebook p-12 mb-8"><img src="/assets/images/facebook.svg" alt="facebook" class="me-12">Facebook 登入</p>
+                <p class="apple p-12 mb-8"><img src="/assets/images/apple.svg" alt="apple" class="me-12">Apple 登入</p>
+                <p class="google p-12"><img src="/assets/images/google.svg" alt="google" class="me-12">Google 登入</p>
+              </div>
+
+              <div id="tab-signup" class="tab">
+                <p class="facebook p-12 mb-8"><img src="/assets/images/facebook.svg" alt="facebook" class="me-12">Facebook 註冊</p>
+                <p class="apple p-12 mb-8"><img src="/assets/images/apple.svg" alt="apple" class="me-12">Apple 註冊</p>
+                <p class="google p-12"><img src="/assets/images/google.svg" alt="google" class="me-12">Google 註冊</p>
+              </div>
+            </div>
+                
+        </div>
+
+    </main>
+
+   
+    <%- include('./layout/footer-no-register'); -%>
+
+    <script type="module" src="../main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(function(){
+        var $li = $('ul.tab-switch li');
+        $($li. eq(0) .addClass('active').find('a').attr('href')).siblings('.tab').hide();
+    
+        $li.click(function(){
+            $($(this).find('a'). attr ('href')).show().siblings ('.tab').hide();
+            $(this).addClass('active'). siblings ('.active').removeClass('active');
+        });
+      });
+    </script>
+
+  </body>
+</html>   
